@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mari Biodata</title>
+<style>
+body {
+    font-family: Arial;
+    background-color: #f0f8ff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 90%;
+    animation: slideUp 1s ease-out;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.left-col {
+    flex: 1;
+    min-width: 250px;
+}
+.right-col {
+    flex: 1;
+    min-width: 250px;
+}
+h1 {
+    color: #d63384;
+    text-align: center;
+    margin-top: 0;
+}
+h2 { color: #0066cc; }
+table {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+td { padding: 8px; }
+ul {
+    background-color: #e6f7ff;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+}
+a {
+    background-color: #d63384;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(214, 51, 132, 0.4);
+}.whatsapp-btn {
+    background-color: #25D366;
+    margin-top: 10px;
+}
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+.social-links {
+    margin-top: 15px;
+    text-align: center;
+}
+.project {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border-left: 4px solid #d63384;
+}
+body.dark-mode .project {
+    background: #2a2a2a;
+}
+.project h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #0066cc;
+}
+.project p {
+    margin: 0;
+    font-size: 14px;
+}
+.social-links a {
+    background: none;
+    color: #d63384;
+    font-size: 24px;
+    margin: 0 8px;
+    padding: 0;
+    display: inline-block;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+    box-shadow: none;
+    color: #0d6efd;
+}
+
+body.dark-mode .social-links a {
+    color: #ff69b4;
+}
+
+a:active { transform: scale(0.95); }
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+body.dark-mode .card {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode h1, 
+body.dark-mode h2 { color: #ff69b4; }
+#themeBtn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 4px solid #d63384;
+    object-fit: cover;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.skills-list li {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.skills-list li:nth-child(1) { animation-delay: 0.3s; }
+.skills-list li:nth-child(2) { animation-delay: 0.6s; }
+.skills-list li:nth-child(3) { animation-delay: 0.9s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<button id="themeBtn">🌙 Dark Mode</button>
+    
+<div class="card">
+    <div class="left-col">
+        <img src="https://i.imgur.com/8Km9tLL.jpg" class="profile-pic" alt="Rutvee">
+        <h1>rutvee ahir</h1>
+        
+        <h2>College Details</h2>
+        <table>
+            <tr><td>Course</td><td>BCA</td></tr>
+            <tr><td>College</td><td>smt knsargra</td></tr>
+            <tr><td>Year</td><td>2nd Year</td></tr>
+        </table>
+
+        <h2>Hu aa sikhva mangu chu</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div class="right-col">
+        <h2>Mara Projects</h2>
+        <div class="project">
+            <h3>Biodata Website</h3>
+            <p>HTML, CSS, JS use kari ne banaveli personal website</p>
+        </div>
+        <div class="project">
+            <h3>Calculator App</h3>
+            <p>JavaScript ma banavelu simple calculator</p>
+        </div>
+
+        <h2>Contact Me</h2>
+        <a href="https://wa.me/919726960071?text=Hi%20Rutvee%2C%20tari%20biodata%20joi" 
+           target="_blank" 
+           class="whatsapp-btn">
+           WhatsApp par Message Karo
+        </a>
+
+        <div class="social-links">
+            <a href="https://instagram.com/tamaru_username" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/tamaru_username" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tamaru_username" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+document.getElementById("myButton").onclick = function(event) {
+    event.preventDefault();
+    alert("Hello Rutvee! Welcome to your website 🚀");
+    this.style.backgroundColor = "#0d6efd";
+    this.innerText = "Click Thai Gayu! ✅";
+    setTimeout(function() {
+        window.open("https://google.com", "_blank");
+    }, 2000);
+}
+
+document.getElementById("themeBtn").onclick = function() {
+    document.body.classList.toggle("dark-mode");
+    this.innerText = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+}
+
+</script>
+
+
+</body>
+</html>
